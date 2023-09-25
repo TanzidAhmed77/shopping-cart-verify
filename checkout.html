@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <section>
+      <div>
+        <input type="number" id="randomNumberInput" readonly /> <br />
+        <button id="generateButton" class="pin">Genarate Pin</button>
+      </div>
+      <div>
+        <input type="number" id="pinNumber" readonly />
+        <div id="buttons" class="buttons">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>Del</button>
+          <button>0</button>
+          <button>C</button>
+        </div>
+        <button id="submit" class="submit">Submit</button>
+      </div>
+    </section>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h1>Payment Successfully Done!!!</h1>
+        <button id="closePopupButton">Close</button>
+      </div>
+    </div>
+
+    <div class="unpopup" id="unpopup">
+      <div class="unpopup-content">
+        <h1>Try Again!!!</h1>
+        <button id="unClosePopupButton">Close</button>
+      </div>
+    </div>
+    <script src="checkout.js"></script>
+  </body>
+</html>

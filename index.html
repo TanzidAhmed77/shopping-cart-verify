@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppind Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Shopping Cart Item List</h1>
+    <section>
+      <div class="product">
+        <img src="images/product-1.png" alt="Iphone 15 Pro Max" />
+        <p id="iphone">Iphone 15 Pro Max</p>
+        <p>Price: <span id="iphone-price" class="price">198990</span> TK</p>
+        <input class="min" type="button" value="-" />
+        <input id="iphone-value" class="much" type="number" value="1" />
+        <input class="add" type="button" value="+" /> <br />
+        <button id="iphone-btn">Buy</button>
+      </div>
+      <div class="product">
+        <img src="images/product-2.png" alt="Mobile Case" />
+        <p id="case">Mobile Case</p>
+        <p>Price: <span id="case-price" class="price">4890</span> TK</p>
+        <input class="min" type="button" value="-" />
+        <input id="case-value" class="much" type="number" value="1" />
+        <input class="add" type="button" value="+" /> <br />
+        <button id="case-btn">Buy</button>
+      </div>
+    </section>
+    <div id="selected-item">
+      <h1>Selected Item</h1>
+      <div>
+        <p class="price-left">Product Price</p>
+        <p class="price-right"><span id="product-price">00</span> TK</p>
+        <p class="price-left">Tax</p>
+        <p class="price-right"><span id="tax">00</span> TK</p>
+        <p class="price-left">Shipping Charge</p>
+        <p class="price-right"><span id="shipping-charge">00</span> TK</p>
+        <hr />
+        <p class="price-left">Total</p>
+        <p class="price-right"><span id="total">00</span> TK</p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
